@@ -1,0 +1,253 @@
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f7f7f7;
+}
+
+h1, h2, p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navbar */
+.Orange {
+
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 10px 20px;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+}
+
+.navbar .nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .nav-links a {
+    color: #555;
+    font-weight: bold;
+}
+
+.navbar .contact-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.navbar .contact-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Banner */
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #e9f7fd;
+}
+
+.banner .content {
+    max-width: 50%;
+}
+
+.banner h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.banner h1 span {
+    color: #007bff;
+}
+
+.banner p {
+    margin: 20px 0;
+    color: #555;
+}
+
+.banner .btn {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.banner .btn:hover {
+    background-color: #218838;
+}
+
+.banner img {
+    max-width: 40%;
+}
+
+/* Standard Curriculum */
+.standard-curriculum {
+    text-align: center;
+    padding: 50px 20px;
+    background: url('background-image.jpg') no-repeat center/cover;
+}
+
+.standard-curriculum h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.curriculum-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 30%;
+}
+
+.card img {
+    width: 50%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+.card p {
+    margin-bottom: 15px;
+    color: #4710bd;
+}
+
+.card a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.card a:hover {
+    background-color: #0056b3;
+}
+
+/* Our Stories */
+.our-stories {
+    padding: 50px 20px;
+    background: url('./assets/bg.png') linear-gradient(to bottom, #e3ffe7, #d9e7ff);
+}
+
+.our-stories h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.story-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.story-card-in{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:20px;
+}
+
+.story-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.story-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .column {
+    flex: 1;
+    padding: 10px;
+}
+
+.footer .social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar .nav-links {
+        display: none;
+    }
+
+    .banner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .banner img {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .curriculum-cards {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .story-cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .story-card-in{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap:20px;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}

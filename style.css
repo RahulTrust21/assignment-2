@@ -14,19 +14,23 @@ h1, h2, p {
 
 a {
     text-decoration: none;
-    color: inherit;
+    /* color: inherit; */
 }
 
 /* Navbar */
-.Orange {
-
+.orange {
+    color: rgb(254, 163, 1);
+}
+.skyBlue{
+    color: rgb(1, 172, 253);
 }
 .navbar {
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #f8f9fa;
-    padding: 10px 20px;
+    padding: 20px 20px;
 }
 
 .navbar .logo {
@@ -41,13 +45,13 @@ a {
 }
 
 .navbar .nav-links a {
-    color: #555;
-    font-weight: bold;
+    /* color: #555; */
+    /* font-weight: bold; */
 }
 
 .navbar .contact-btn {
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: rgb(254, 163, 1);
     color: white;
     border: none;
     border-radius: 5px;
@@ -100,6 +104,11 @@ a {
 
 .banner img {
     max-width: 40%;
+}
+/* background img section  */
+.bg-img-class{
+    background: url(/assets/bg.png);
+    background-repeat:round;
 }
 
 /* Standard Curriculum */
@@ -159,13 +168,15 @@ a {
 
 /* Our Stories */
 .our-stories {
-    padding: 50px 20px;
-    background: url('./assets/bg.png') linear-gradient(to bottom, #e3ffe7, #d9e7ff);
+    padding: 60px 20px;
+    /* background: url('./assets/bg.png') linear-gradient(to bottom, #e3ffe7, #d9e7ff); */
+    background:linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
 }
 
 .our-stories h2 {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 80px;
+    font-size: 46px;
 }
 
 .story-cards {

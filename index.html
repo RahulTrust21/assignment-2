@@ -4,15 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
     <title>Kids School Section</title>
+    <!-- css link  -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <!-- Link to Font Awesome CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    
 
 </head>
 
 <body>
     <!-- Navbar -->
     <div class="navbar">
-        <div class="logo">Kids School</div>
+        <div class="logo-div">
+            <div class="logo-img">
+                <img src="/assets/logo.png" alt="">
+            </div>
+            <div class="logo">Kids School</div>
+        </div>
         <div class="nav-links">
             <a class="orange" href="#">Home</a>
             <a class="skyBlue" href="#">About</a>
@@ -20,85 +34,130 @@
             <a style="color: rgb(93, 88, 239);" class="" href="#">Admission</a>
 
         </div>
-        <button class="contact-btn">Contact Us</button>
+        <button class="contact-btn">Contact</button>
+        <button>
+            <div class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </button>
     </div>
 
     <!-- Banner -->
     <div class="banner">
         <div class="content">
-            <h1>Empowering
-                students from small age towards vision</h1>
-            <p>We provide the best environment for your child's growth and learning.</p>
+            <h1><span class="Empowering">Empowering</span>
+                students from small age <span style="color: rgb(1, 172, 253);">towards vision</span></h1>
+            <p>With the courage, Confidence, Creativity and Compassion to make their Unique Contribution in a Diverse and Dynamic World.
+            </p>
             <button class="btn">Learn More</button>
         </div>
         <img src="./assets/hero-kids.png" alt="Child">
     </div>
 
     <section class="bg-img-class">
+        <div class="marquee-container">
+            <div class="marquee">
+                <span>Welcome to our school, where learning meets fun and growth!🎉</span>
+            </div>
+        </div>
         <!-- Standard Curriculum -->
         <div class="standard-curriculum">
             <h2>Our Standard Curriculum</h2>
             <div class="curriculum-cards">
-                <div class="card">
+                <div class="card card-1">
                     <img src="./assets/kinder.png" alt="Math">
-                    <h3>Math</h3>
-                    <p>Fun and engaging lessons.</p>
+                    <h3>Kinder (3-6) Years</h3>
+                    <p>Engage young minds with playful activities, fostering creativity, curiosity, and foundational skills for lifelong learning.</p>
                     <a href="#">Read More</a>
                 </div>
-                <div class="card">
+                <div class="card card-2">
                     <img src="./assets/elementary.png" alt="Science">
-                    <h3>Science</h3>
-                    <p>Explore and experiment.</p>
+                    <h3>Elementary School</h3>
+                    <p>Build strong foundations through interactive learning, critical thinking, and skill development for future success.</p>
                     <a href="#">Read More</a>
                 </div>
-                <div class="card">
+                <div class="card card-3">
                     <img src="./assets/middle.png" alt="Arts">
-                    <h3>Arts</h3>
-                    <p>Unleash creativity.</p>
+                    <h3>Middle (10-16) Years</h3>
+                    <p>Empowering students with advanced knowledge, analytical skills, and confidence to excel in their academic journey.</p>
                     <a href="#">Read More</a>
                 </div>
+            </div>
+            <div class="arrow-buttons">
+                <button class="arrow-btn">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="arrow-btn">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
             </div>
         </div>
         <!-- Our Stories -->
         <div class="our-stories">
             <h2>Our Stories</h2>
             <div class="story-cards">
-                <div class="story-card">
-                    <img src="./assets/story-1.png" alt="Story 1">
-                    <h3>Story Title 1</h3>
-                    <p>Short description of the story.</p>
+                <div class="story-card card-big">
+                    <div class="image-block">
+                        <img src="./assets/story-1.png" alt="Story 1">
+                        <p class="story-date skyblue">November 19, 2019</p>
+                    </div>
+                    <h3>The New Kid’s Journey</h3>
+                    <p>On his first day at Riverdale High, Alex nervously entered the classroom, clutching his books tightly. The curious eyes of unfamiliar faces followed him as he introduced himself. </p>
                 </div>
                 <div class="story-card-in">
                     <div class="story-card">
-                        <img src="./assets/story-2.png" alt="Story 2">
-                        <h3>Story Title 2</h3>
-                        <p>Short description of the story.</p>
+                        <div class="image-block">
+                            <img src="./assets/story-1.png" alt="Story 1">
+                            <p class="story-date">November 19, 2019</p>
+                        </div>
+                         <h3>The Lost Library Key</h3>
+                        <p>In the heart of the school's library was a secret door, said to hold rare books. When the librarian misplaced the</p>
                     </div>
                     <div class="story-card">
-                        <img src="./assets/story-3.png" alt="Story 3">
-                        <h3>Story Title 3</h3>
-                        <p>Short description of the story.</p>
+                        <div class="image-block">
+                            <img src="./assets/story-1.png" alt="Story 1">
+                            <p class="story-date">November 19, 2019</p>
+                        </div>
+                        <h3>The Science Fair Showdown</h3>
+                        <p>Excitement filled the air as the annual science fair began. Teams displayed their creative inventions</p>
                     </div>
                     <div class="story-card">
-                        <img src="./assets/story-4.png" alt="Story 4">
-                        <h3>Story Title 4</h3>
-                        <p>Short description of the story.</p>
+                        <div class="image-block">
+                            <img src="./assets/story-1.png" alt="Story 1">
+                            <p class="story-date">November 19, 2019</p>
+                        </div>
+                        <h3>The Musical Miracle</h3>
+                        <p>Springfield Middle School’s music club was struggling until Mia joined with her </p>
                     </div>
                     <div class="story-card">
-                        <img src="./assets/story-5.png" alt="Story 4">
-                        <h3>Story Title 4</h3>
-                        <p>Short description of the story.</p>
+                        <div class="image-block">
+                            <img src="./assets/story-1.png" alt="Story 1">
+                            <p class="story-date">November 19, 2019</p>
+                        </div>
+                         <h3>Time Capsule Discovery</h3>
+                        <p>While renovating the school garden, students uncovered a rusted box hidden beneath an old </p>
                     </div>
                 </div>
+            </div>
+            <div class="view-all-container">
+                <button class="view-all-btn">View All</button>
             </div>
         </div>
     </section>
 
+    
     <!-- Footer -->
     <div class="footer">
         <div class="column">
-            <h3>Kids School</h3>
-            <p>Where learning meets fun!</p>
+            <div class="logo-div footer-logo">
+                <div class="logo-img">
+                    <img src="/assets/logo.png" alt="">
+                </div>
+                <div class="logo"><h2 class="footer-logo-text">Kids <br>School</h2></div>
+            </div>
+            <p class="footer-p">Where learning meets fun!</p>
         </div>
         <div class="column">
             <h3>Quick Links</h3>

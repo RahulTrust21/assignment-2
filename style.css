@@ -394,6 +394,9 @@ a {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .logo{
+        display: none;
+    }
     .navbar{
         padding: 10px 20px;
         position: sticky;
